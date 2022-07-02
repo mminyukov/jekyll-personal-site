@@ -1,7 +1,7 @@
 title: Михаил Минюков DevOps Engineer
 markdown: kramdown
 url: ""
-baseurl: ""
+baseurl: "/personal-site"
 
 # for atom feed
 author:
