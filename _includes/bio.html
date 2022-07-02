@@ -1,6 +1,6 @@
 <section id="bio">
   <section id="img-wrapper">
-    <img src="{{site.data.author.dp}}" alt="" />
+    <img src="{{site.baseurl}}/assets/images/avatar.jpg" alt="" />
   </section>
   <section id="bio-wrapper">
     <div id="text-wrapper">{{site.data.author.description}}</div>
@@ -10,6 +10,8 @@
         <img src="{{site.baseurl}}/assets/icons/{{i.title}}.png" alt="" />
       </a>
       {%endfor%}
+      <br/>
+      <i class="fa-solid fa-location-dot"></i> {{site.data.author.location}}
     </div>
   </section>
 </section>
