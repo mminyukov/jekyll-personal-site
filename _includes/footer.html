@@ -1,4 +1,9 @@
 <footer>
   <p>Forked from <a href='https://github.com/sharadcodes/jekyll-theme-serial-programmer' target='_blank'>Github</a></p>
-  <p>&copy; 2022 - {{ 'now' | date: "%Y" }} | {{site.title}}</p>
+  {% assign currentYear = 'now' | date: "%Y" %}
+  {% if currentYear == "2022" %}
+  <p>&copy; {{currentYear}} | {{site.title}}</p>
+  {% else %}
+  <p>&copy; 2022 - {{currentYear}} | {{site.title}}</p>
+  {%endif%}
 </footer>
